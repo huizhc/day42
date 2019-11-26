@@ -66,10 +66,10 @@
                 super(name, money);
                 this.notepad = [];
             }
-            Working (work) {
-                if (work instanceof Array) {
-                    for (let i = 0; i < work.length; i ++) {
-                        this.notepad.push(work[i]);
+            Working (food) {
+                if (food instanceof Array) {
+                    for (let i = 0; i < food.length; i ++) {
+                        this.notepad.push(food[i].name);
                     }
                     console.log('我记下客人点了' + this.notepad.join());
                 } else {

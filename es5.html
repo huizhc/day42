@@ -62,10 +62,10 @@
             Staff.call(this, name, money)
             this.notepad = [];
         }
-        Waiter.prototype.Working = function (wrok) {
-            if (work instanceof Array) {
-                for (let i = 0; i < work.length; i ++) {
-                    this.notepad.push(work[i]);
+        Waiter.prototype.Working = function (food) {
+            if (food instanceof Array) {
+                for (let i = 0; i < food.length; i ++) {
+                    this.notepad.push(food[i].name);
                 }
                 console.log('我记下客人点了' + this.notepad.join());
             } else {
